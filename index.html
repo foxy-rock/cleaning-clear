@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cleaning Clear — клининговая компания</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ===================== 1. ШАПКА / НАВИГАЦИЯ ===================== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="logo"
+          >Cleaning <span>Clear</span>
+          <img
+            src="https://img.icons8.ru/?size=64&id=YJVpQTwHvfgt&format=png&color=2AF598,009EFD"
+            alt=""
+            width="40px"
+        /></a>
+        <nav class="nav" id="nav">
+          <a href="#services">Услуги</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#calculator">Калькулятор</a>
+          <a href="#process">Как мы работаем</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#contacts" class="btn btn--small header__cta"
+          >Заказать уборку</a
+        >
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================== 2. ГЕРОЙ ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bubbles">
+        <span></span><span></span><span></span><span></span><span></span
+        ><span></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="badge">✨ Профессиональная уборка в вашем городе</p>
+          <h1>
+            Чистота, которую <span class="accent">видно</span> и
+            <span class="accent">чувствуется</span>
+          </h1>
+          <p class="hero__sub">
+            Клининговая компания «ЧистоБай» — генеральные и поддерживающие
+            уборки квартир, домов и офисов. Приедем за 90 минут, уберём так,
+            будто вы здесь никогда и не жили — в хорошем смысле.
+          </p>
+          <div class="hero__actions">
+            <a href="#calculator" class="btn">Рассчитать стоимость</a>
+            <a href="#services" class="btn btn--ghost">Наши услуги</a>
+          </div>
+          <div class="hero__stats">
+            <div><b>12 400+</b><span>уборок выполнено</span></div>
+            <div><b>4.9</b><span>рейтинг на картах</span></div>
+            <div><b>90 мин</b><span>среднее время приезда</span></div>
+          </div>
+        </div>
+        <div class="hero__card reveal">
+          <div class="hero__card-emoji">
+            <img src="./images/icons8-блеск-100.png" alt="" />
+          </div>
+          <h3>Блеск за 3 часа</h3>
+          <p>
+            Квартира-студия под ключ: окна, кухня, санузел, полы. Фиксированная
+            цена — без сюрпризов.
+          </p>
+          <div class="hero__price">от <b>3 900 ₽</b></div>
+          <a href="#order" class="btn btn--small btn--full">Заказать</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. УСЛУГИ ===================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="section__title reveal">Наши услуги</h2>
+        <p class="section__sub reveal">
+          Подбираем формат уборки под вашу задачу — от лёгкой поддержки до
+          послестроительной чистки.
+        </p>
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-коттедж-50.png" alt="" />
+            </div>
+            <h3>Поддерживающая</h3>
+            <p>
+              Регулярная уборка: пыль, полы, санузел, кухня. Идеально раз в
+              неделю.
+            </p>
+            <span class="service-card__price">от 2 500 ₽</span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-звезда-50.png" alt="" />
+            </div>
+            <h3>Генеральная</h3>
+            <p>
+              Глубокая чистка каждого угла: от плинтусов до плафонов и внутри
+              шкафов.
+            </p>
+            <span class="service-card__price">от 6 900 ₽</span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-окно-50.png" alt="" />
+            </div>
+            <h3>Окна и витражи</h3>
+            <p>
+              Мойка окон, рам, откосов и балконного остекления с двух сторон.
+            </p>
+            <span class="service-card__price">от 450 ₽/м²</span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-окно-50.png" alt="" />
+            </div>
+            <h3>После ремонта</h3>
+            <p>
+              Удаляем пыль, следы краски и клея, выносим строительный мусор.
+            </p>
+            <span class="service-card__price">от 8 500 ₽</span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-офис-50.png" alt="" />
+            </div>
+            <h3>Офисы и коммерция</h3>
+            <p>
+              Ежедневная и ночная уборка офисов, салонов, магазинов по договору.
+            </p>
+            <span class="service-card__price">от 180 ₽/м²</span>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <img src="./images/icons8-мебель-50.png" alt="" />
+            </div>
+            <h3>Химчистка мебели</h3>
+            <p>
+              Диваны, ковры, кресла и матрасы — экстракторная чистка и
+              дезодорация.
+            </p>
+            <span class="service-card__price">от 1 200 ₽</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. ПРЕИМУЩЕСТВА ===================== -->
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <h2 class="section__title reveal">Почему выбирают нас</h2>
+        <div class="advantages__grid">
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=100&id=jD5WC6V033fp&format=png&color=000000"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Проверенный персонал</h3>
+            <p>
+              Клинёры с опытом от 2 лет, проверка через службу безопасности,
+              соцпакет.
+            </p>
+          </div>
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=64&id=Nm3BY1XcF0lw&format=png&color=D9E021,FB872B"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Безопасная химия</h3>
+            <p>
+              Сертифицированные средства без запаха — безопасно для детей и
+              питомцев.
+            </p>
+          </div>
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=100&id=uEaf6CBXvmkk&format=png&color=000000"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Чек-лист из 60 пунктов</h3>
+            <p>
+              Вы принимаете работу по прозрачному списку — видно, что и где
+              убрано.
+            </p>
+          </div>
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=100&id=wsvP0T9ljWGC&format=png&color=000000"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Гарантия результата</h3>
+            <p>
+              Не понравился результат — приедем и переделаем бесплатно в течение
+              24 часов.
+            </p>
+          </div>
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=100&id=44779&format=png&color=000000"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Оплата после уборки</h3>
+            <p>Никаких предоплат. Платите только когда увидите результат.</p>
+          </div>
+          <div class="adv reveal">
+            <span
+              ><img
+                src="https://img.icons8.ru/?size=64&id=52550&format=png&color=2AF598,009EFD"
+                alt=""
+                width="50px"
+            /></span>
+            <h3>Быстрый выезд</h3>
+            <p>Срочная уборка в день обращения — бригада уже готова выехать.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. КАЛЬКУЛЯТОР ===================== -->
+    <section class="section calculator" id="calculator">
+      <div class="container calculator__inner">
+        <div class="reveal">
+          <h2 class="section__title">Калькулятор стоимости</h2>
+          <p class="section__sub">
+            Ответьте на три вопроса — и узнайте точную цену до копейки.
+          </p>
+          <div class="calc">
+            <div class="calc__row">
+              <label>Тип объекта</label>
+              <div class="calc__options" id="calcType">
+                <button class="calc__opt active" data-price="60">
+                  Квартира
+                </button>
+                <button class="calc__opt" data-price="70">Дом</button>
+                <button class="calc__opt" data-price="45">Офис</button>
+              </div>
+            </div>
+            <div class="calc__row">
+              <label>Тип уборки</label>
+              <div class="calc__options" id="calcMode">
+                <button class="calc__opt active" data-k="1">
+                  Поддерживающая
+                </button>
+                <button class="calc__opt" data-k="1.8">Генеральная</button>
+                <button class="calc__opt" data-k="2.2">После ремонта</button>
+              </div>
+            </div>
+            <div class="calc__row">
+              <label>Площадь: <b id="areaVal">50 м²</b></label>
+              <input
+                type="range"
+                id="area"
+                min="20"
+                max="300"
+                value="50"
+                step="5"
+              />
+            </div>
+            <div class="calc__extras">
+              <label
+                ><input type="checkbox" id="extraWindows" data-price="450" />
+                Мытьё окон</label
+              >
+              <label
+                ><input type="checkbox" id="extraFridge" data-price="600" />
+                Холодильник внутри</label
+              >
+              <label
+                ><input type="checkbox" id="extraOven" data-price="800" />
+                Духовка внутри</label
+              >
+              <label
+                ><input type="checkbox" id="extraBalk" data-price="900" />
+                Балкон</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="calc__result reveal">
+          <p>Предварительная стоимость</p>
+          <div class="calc__price" id="calcPrice">3 000 ₽</div>
+          <ul class="calc__note">
+            <li>Фиксируем цену на 7 дней</li>
+            <li>Оплата после уборки</li>
+            <li>Чек-лист приёма работ</li>
+          </ul>
+          <a href="#order" class="btn btn--full">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. КАК МЫ РАБОТАЕМ ===================== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <h2 class="section__title reveal">Как мы работаем</h2>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Заявка</h3>
+            <p>Оставляете заявку или звоните — уточняем детали за 2 минуты.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Расчёт</h3>
+            <p>Называем фиксированную цену и время приезда бригады.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Уборка</h3>
+            <p>
+              Команда из 2–4 клинёров работает со своим инвентарём и химией.
+            </p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Приёмка</h3>
+            <p>Проходим чек-лист вместе с вами. Оплата — после вашего «вау».</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. ДО / ПОСЛЕ ===================== -->
+    <section class="section before-after" id="beforeAfter">
+      <div class="container">
+        <h2 class="section__title reveal">До и после</h2>
+        <p class="section__sub reveal">
+          Потяните ползунок, чтобы увидеть разницу ✨
+        </p>
+        <div class="ba__body">
+          <div class="ba reveal" id="ba">
+            <img
+              src="https://picsum.photos/seed/dirtyroom/900/500"
+              alt="До уборки"
+              class="ba__img"
+            />
+            <div class="ba__after" id="baAfter">
+              <img
+                src="https://picsum.photos/seed/cleanroom/900/500"
+                alt="После уборки"
+              />
+            </div>
+            <div class="ba__handle" id="baHandle"><span>↔</span></div>
+          </div>
+          <div class="ba reveal" id="ba">
+            <img
+              src="https://picsum.photos/seed/dirtyroom/900/500"
+              alt="До уборки"
+              class="ba__img"
+            />
+            <div class="ba__after" id="baAfter">
+              <img
+                src="https://picsum.photos/seed/cleanroom/900/500"
+                alt="После уборки"
+              />
+            </div>
+            <div class="ba__handle" id="baHandle"><span>↔</span></div>
+          </div>
+          <div class="ba reveal" id="ba">
+            <img
+              src="https://picsum.photos/seed/dirtyroom/900/500"
+              alt="До уборки"
+              class="ba__img"
+            />
+            <div class="ba__after" id="baAfter">
+              <img
+                src="https://picsum.photos/seed/cleanroom/900/500"
+                alt="После уборки"
+              />
+            </div>
+            <div class="ba__handle" id="baHandle"><span>↔</span></div>
+          </div>
+          <div class="ba reveal" id="ba">
+            <img
+              src="https://picsum.photos/seed/dirtyroom/900/500"
+              alt="До уборки"
+              class="ba__img"
+            />
+            <div class="ba__after" id="baAfter">
+              <img
+                src="https://picsum.photos/seed/cleanroom/900/500"
+                alt="После уборки"
+              />
+            </div>
+            <div class="ba__handle" id="baHandle"><span>↔</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. ОТЗЫВЫ ===================== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2 class="section__title reveal">Отзывы клиентов</h2>
+        <div class="reviews__slider reveal">
+          <button class="slider__arrow" id="prevRev" aria-label="Назад">
+            ‹
+          </button>
+          <div class="reviews__track" id="reviewsTrack">
+            <article class="review">
+              <div class="review__stars">★★★★★</div>
+              <p>
+                «Заказывала генеральную уборку перед новосельем. Приехали четыре
+                девушки, за 5 часов квартира засверкала. Холодильник вымыли так,
+                как завод бы не смог.»
+              </p>
+              <div class="review__author">
+                <b>Марина К.</b><span>Генеральная уборка, 64 м²</span>
+              </div>
+            </article>
+            <article class="review">
+              <div class="review__stars">★★★★★</div>
+              <p>
+                «Работаем с «ЧистоБай» уже год — уборка офиса 3 раза в неделю.
+                Ни одного срыва, всегда один и тот же состав, вопросы решаются
+                за минуту.»
+              </p>
+              <div class="review__author">
+                <b>Дмитрий В.</b><span>Обслуживание офиса</span>
+              </div>
+            </article>
+            <article class="review">
+              <div class="review__stars">★★★★★</div>
+              <p>
+                «После ремонта пыли было — хоть противогаз надевай. Ребята
+                справились за день, включая окна и батареи. Цена совпала с
+                расчётом на сайте.»
+              </p>
+              <div class="review__author">
+                <b>Анна и Олег</b><span>Уборка после ремонта</span>
+              </div>
+            </article>
+            <article class="review">
+              <div class="review__stars">★★★★★</div>
+              <p>
+                «Вызвал химчистку дивана — думал, придётся выбрасывать. Выглядит
+                как новый, пятна от кофе исчезли полностью. Рекомендую!»
+              </p>
+              <div class="review__author">
+                <b>Сергей П.</b><span>Химчистка мебели</span>
+              </div>
+            </article>
+          </div>
+          <button class="slider__arrow" id="nextRev" aria-label="Вперёд">
+            ›
+          </button>
+        </div>
+        <div class="slider__dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. ЗАЯВКА ===================== -->
+    <section class="section order" id="order">
+      <div class="container order__inner">
+        <div class="order__text reveal">
+          <h2 class="section__title">Оставьте заявку</h2>
+          <p class="section__sub">
+            Перезвоним в течение 10 минут, ответим на вопросы и забронируем
+            удобное время.
+          </p>
+          <ul class="order__list">
+            <li>
+              <img src="./images/icons8-телефон-15.png" width="15px" alt="" />
+              +7 (900) 123-45-67
+            </li>
+            <li>
+              <img
+                src="./images/icons8-время-доставки-15.png"
+                width="15px"
+                alt=""
+              />
+              Ежедневно с 8:00 до 22:00
+            </li>
+            <li>
+              <img
+                src="./images/icons8-внедорожник-15.png"
+                width="15px"
+                alt=""
+              />
+              Выезд по всему городу — бесплатно
+            </li>
+          </ul>
+        </div>
+        <form class="order__form reveal" id="orderForm" novalidate>
+          <input type="text" id="name" placeholder="Ваше имя" required />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Телефон +7 (___) ___-__-__"
+            required
+          />
+          <select id="service">
+            <option>Поддерживающая уборка</option>
+            <option>Генеральная уборка</option>
+            <option>Уборка после ремонта</option>
+            <option>Мойка окон</option>
+            <option>Химчистка мебели</option>
+            <option>Обслуживание офиса</option>
+          </select>
+          <textarea
+            id="comment"
+            rows="3"
+            placeholder="Комментарий (необязательно)"
+          ></textarea>
+          <button type="submit" class="btn btn--full">Отправить заявку</button>
+          <p class="order__policy">
+            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+          </p>
+          <div class="order__success" id="orderSuccess">
+            ✅ Заявка отправлена! Мы перезвоним вам в течение 10 минут.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== 10. ФУТЕР / КОНТАКТЫ ===================== -->
+    <footer class="footer" id="contacts">
+      <div class="container footer__inner">
+        <div class="footer__col">
+          <a href="#hero" class="logo logo--light"
+            >Cleaning <span>Clear</span>
+            <img
+              src="https://img.icons8.ru/?size=64&id=YJVpQTwHvfgt&format=png&color=2AF598,009EFD"
+              width="25px"
+              alt=""
+          /></a>
+          <p>
+            Профессиональная клининговая компания. Чистота — это просто, когда
+            есть мы.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Услуги</h4>
+          <a href="#services">Поддерживающая уборка</a>
+          <a href="#services">Генеральная уборка</a>
+          <a href="#services">Уборка после ремонта</a>
+          <a href="#services">Химчистка мебели</a>
+        </div>
+        <div class="footer__col">
+          <h4>Компания</h4>
+          <a href="#advantages">О нас</a>
+          <a href="#process">Как мы работаем</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#calculator">Калькулятор</a>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+          <a href="mailto:hello@chistobay.ru">hello@chistobay.ru</a>
+          <p>г. Москва, ул. Чистая, 15</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Telegram">✈️</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+            <a href="#" aria-label="VK">🅥</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span>© 2026 «ЧистоБай». Все права защищены.</span>
+        <span>Сделано с ❤️ и чистотой</span>
+      </div>
+    </footer>
+
+    <!-- Кнопка "вверх" -->
+    <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
